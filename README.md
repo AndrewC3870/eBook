@@ -26,3 +26,8 @@ E-Reader!
 |N-channel MOSFET | [DigiKey](https://www.digikey.ro/ro/products/detail/vishay-siliconix/SI1308EDL-T1-GE3/4876435?s=N4IgTCBcDaIMoEkCMBmADADgKIBEAyAtACpIEDiWKIAugL5A) | [Datasheet](https://www.vishay.com/docs/63399/si1308edl.pdf)|
 |Display Connector | [Mouser](https://ro.mouser.com/ProductDetail/Hirose-Connector/FH34SRJ-24S-0.5SH99?qs=vcbW%252B4%252BSTIpKBl5ap9J8Fw%3D%3D) | [Datasheet](https://ro.mouser.com/datasheet/2/185/FH34SRJ_24S_0_5SH_99__CL0580_1255_6_99_2DDrawing_0-1615044.pdf)|
 |Power Inductor | [Mouser](https://ro.mouser.com/ProductDetail/Bourns/SRR4828A-101M?qs=EU6FO9ffTwcw5i9FweW3JA%3D%3D) | [Datasheet](https://ro.mouser.com/datasheet/2/54/srr4828a-1391533.pdf)|
+
+## Bloc Diagram
+
+![Bloc_Diagram](https://github.com/AndrewC3870/eBook/blob/a635efa0d417c27b5712214bb76160dafadc5a88/Images/Bloc_Diagram.png)
+
