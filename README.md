@@ -1,7 +1,7 @@
-# eBook
+# OpenBook
+E-Reader!
 
-![BlocDiagram](Images/PCB_Board_3D_TopView_v6)
-
+![OpenBook_Render_img]([http://url/to/img.png](https://github.com/AndrewC3870/eBook/blob/main/Images/OpenBook_render_v2.jpg))
 ## 🧾 Bill of Materials (BOM)
 
 | Component | Link to buy | Datasheet |
