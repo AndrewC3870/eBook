@@ -1,7 +1,7 @@
 # OpenBook
 E-Reader!
 
-![OpenBook_Render_img]([http://url/to/img.png](https://github.com/AndrewC3870/eBook/blob/main/Images/OpenBook_render_v2.jpg))
+![OpenBook_render_img](https://github.com/AndrewC3870/eBook/blob/72186e38a352aececaa19a66bf15cb31876096c4/Images/OpenBook_render_v2.jpg)
 ## 🧾 Bill of Materials (BOM)
 
 | Component | Link to buy | Datasheet |
