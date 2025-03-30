@@ -27,7 +27,80 @@ E-Reader!
 |Display Connector | [Mouser](https://ro.mouser.com/ProductDetail/Hirose-Connector/FH34SRJ-24S-0.5SH99?qs=vcbW%252B4%252BSTIpKBl5ap9J8Fw%3D%3D) | [Datasheet](https://ro.mouser.com/datasheet/2/185/FH34SRJ_24S_0_5SH_99__CL0580_1255_6_99_2DDrawing_0-1615044.pdf)|
 |Power Inductor | [Mouser](https://ro.mouser.com/ProductDetail/Bourns/SRR4828A-101M?qs=EU6FO9ffTwcw5i9FweW3JA%3D%3D) | [Datasheet](https://ro.mouser.com/datasheet/2/54/srr4828a-1391533.pdf)|
 
-## Bloc Diagram
+## Bloc Diagram and PCB
 
-![Bloc_Diagram](https://github.com/AndrewC3870/eBook/blob/a635efa0d417c27b5712214bb76160dafadc5a88/Images/Bloc_Diagram.png)
+<p align="center">
+  <img src="[Bloc_diagram](https://github.com/AndrewC3870/eBook/blob/8cbaa91b3b40d0fbba0b6ee787010c36f6c64137/Images/Bloc_diagram_v4.svg)" alt="Image 1" width="200"/>
+  <img src="[PCB](https://github.com/AndrewC3870/eBook/blob/8cbaa91b3b40d0fbba0b6ee787010c36f6c64137/Images/PCB_TOP_VIEW.png)" alt="Image 2" width="200"/>
+</p>
 
+## Main Components and Connections
+1. **Main processing unit**
+    * `ESP32-C6 Microcontroller (ESP32-C6-WROOM-1-N8)` - The central processing unit of the system with WiFi/Bluetooth connectivity.
+
+2. **Power Management System**
+    * `LDO Voltage Regulator (XC6220A331MR-G)`: Provides stable 3.3V power from battery/USB
+
+    * `Li-Po Battery Charging Controller (MCP73831)`: Manages charging of the LP584174 battery
+
+    * `Battery Charge Level Monitoring (MAX17048G+T10)`: Connected via I2C to monitor battery status
+3. **Display System**
+    * `E-Ink Display (7.5" 800×480 px)`: Connected via SPI interface
+
+4. **Storage**
+    * `External NOR Flash (W25Q512JVEIQ, 64MB)`: Connected via SPI, main memory 64 MB
+
+    * `SD Card`: Connected via SPI, used for external memory extension for adding books
+
+5. **Environmental Sensing**
+    * `BME688 Environmental Sensor`: Connected via I2C
+
+6. **Real-Time Clock**
+    * `DS3231SN RTC Module`: Connected via I2C (same bus as BME688)
+
+7. **User Interface**
+    * `Buttons`: 3x GPIO buttons (Reset, Change, Boot)
+
+8. **Connectivity**
+    * `USB-C Connector`: For power and programming
+    * `Qwiic/Stemma QT Connector`: I2C expansion port
+
+## ESP32-C6 Used pins
+
+| PIN | Component | Signal Name | Notes|
+|-----|----------|--------------------------|------|
+| 3V3 | | 3V3 | |
+| EN | Reset Button | RESET| Reset in case of error |
+| IO0| RTC Module | INT_RTC | High precision real time clock chip|
+| IO1| RTC Module | 32KHZ||
+| IO2| External NOR Flash, SD Card | MISO| 64MB of flash memory|
+| IO3| E-Paper Display | EPD_BUSY||
+| IO4| SD Card | SS_SD | |
+| IO5| E-Paper Display| EPD_DC||
+| IO6| External NOR Flash, SD Card, E-Paper Display| SCK||
+| IO7| External NOR Flash, SD Card, E-Paper Display| MOSI||
+| IO8| | GPIO8 ||
+| IO9| Boot Button | IO/BOOT||
+| IO10| E-Paper Display | EPD_CS| |
+| IO11| External NOR Flash | FLASH_CS| |
+| IO12| ESD protection | USB_D-| |
+| IO13| ESD protection | USB_D+| |
+| IO14| Change Button | IO/CHANGE| |
+| IO15| | TX| |
+| IO16| | RX| |
+| IO17| RTC Module | RTC_RST| |
+| IO18| Environmental Sensor | I2C_PW| |
+| IO19| EPD Power | EPD_3V3_C| |
+| IO20| RTC Module, Qwiic / Stemma QT, Battery ChargeLevel| SDA| |
+| IO21| Battery ChargeLevel, Environmental Sensor, RTC Module, Qwiic / Stemma QT| SCL| |
+| IO22| E-Paper Display| EPD_RST| |
+| GND| | GND | Connected to the main ground|
+
+## Power Consumption Considerations
+The system is designed for low power operation, because the most power consuming components are the screen and the ESP32-C6.
+
+* E-Ink Display: Only consumes power during updates about **0.3mW**
+* ESP32-C6: Can enter deep sleep mode **26.85 μW** between operations and the average power consumption during active mode is **78.32 mW**
+* Battery 3.7V 1800mAh that is **6.6W** of power
+
+The avarage lifetime of device is about 14-17 days!
