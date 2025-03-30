@@ -103,3 +103,6 @@ The system is designed for low power operation, because the most power consuming
 * Battery 3.7V 1800mAh that is **6.6W** of power
 
 The avarage lifetime of device is about 14-17 days!
+
+
+![OpenBook_render_img](https://github.com/AndrewC3870/eBook/blob/main/Images/OpenBook_render_v4.jpg?raw=true)
