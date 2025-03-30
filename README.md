@@ -31,7 +31,7 @@ E-Reader!
 
 <p align="center">
   <img src="https://github.com/AndrewC3870/eBook/blob/main/Images/Bloc_diagram_v3.png" alt="Bloc_diagram" style="width: 45%; max-width: 100%; height: auto;"/>
-  <img src="https://github.com/AndrewC3870/eBook/blob/8cbaa91b3b40d0fbba0b6ee787010c36f6c64137/Images/PCB_TOP_VIEW_v1.png" alt="PCB" style="width: 45%; max-width: 100%; height: auto;"/>
+  <img src="https://github.com/AndrewC3870/eBook/blob/main/Images/PCB_TOP_VIEW_v1.png?raw=true" alt="PCB" style="width: 45%; max-width: 100%; height: auto;"/>
 </p>
 
 ## Main Components and Connections
