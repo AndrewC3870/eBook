@@ -30,7 +30,7 @@ E-Reader!
 ## Bloc Diagram and PCB
 
 <p align="center">
-  <img src="https://github.com/AndrewC3870/eBook/blob/main/Images/Bloc_diagram_v3.png" alt="Bloc_diagram" style="width: 45%; max-width: 100%; height: auto;"/>
+  <img src="https://github.com/AndrewC3870/eBook/blob/f059498f3fb51f44e1c01a6e73f9928f5063a594/Images/Bloc_diagram_v1.jpg" style="width: 45%; max-width: 100%; height: auto;"/>
   <img src="https://github.com/AndrewC3870/eBook/blob/main/Images/PCB_TOP_VIEW_v1.png?raw=true" alt="PCB" style="width: 45%; max-width: 100%; height: auto;"/>
 </p>
 
