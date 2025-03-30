@@ -45,7 +45,7 @@ E-Reader!
 
     * `Battery Charge Level Monitoring (MAX17048G+T10)`: Connected via I2C to monitor battery status
 3. **Display System**
-    * `E-Ink Display (7.5" 800×480 px)`: Connected via SPI interface
+    * `E-Ink Display (7.5" 800×480 px)`: Connected via SPI interface, displays the content
 
 4. **Storage**
     * `External NOR Flash (W25Q512JVEIQ, 64MB)`: Connected via SPI, main memory 64 MB
@@ -53,10 +53,10 @@ E-Reader!
     * `SD Card`: Connected via SPI, used for external memory extension for adding books
 
 5. **Environmental Sensing**
-    * `BME688 Environmental Sensor`: Connected via I2C
+    * `BME688 Environmental Sensor`: Connected via I2C used to detect a wide variety of volatile organic compounds
 
 6. **Real-Time Clock**
-    * `DS3231SN RTC Module`: Connected via I2C (same bus as BME688)
+    * `DS3231SN RTC Module`: Connected via I2C (same bus as BME688)measures and tracks time, often in hours, minutes, and seconds
 
 7. **User Interface**
     * `Buttons`: 3x GPIO buttons (Reset, Change, Boot)
@@ -69,32 +69,31 @@ E-Reader!
 
 | PIN | Component | Signal Name | Notes|
 |-----|----------|--------------------------|------|
-| 3V3 | | 3V3 | |
+| 3V3 | LDO Voltage Regulator | 3V3 | Supply power |
 | EN | Reset Button | RESET| Reset in case of error |
 | IO0| RTC Module | INT_RTC | High precision real time clock chip|
-| IO1| RTC Module | 32KHZ||
-| IO2| External NOR Flash, SD Card | MISO| 64MB of flash memory|
+| IO1| RTC Module | 32KHZ| High precision real time clock chip|
+| IO2| External NOR Flash, SD Card | MISO| Master In Slave Out|
 | IO3| E-Paper Display | EPD_BUSY||
-| IO4| SD Card | SS_SD | |
+| IO4| SD Card | SS_SD | Extern memory (Micro SD cards)|
 | IO5| E-Paper Display| EPD_DC||
-| IO6| External NOR Flash, SD Card, E-Paper Display| SCK||
-| IO7| External NOR Flash, SD Card, E-Paper Display| MOSI||
-| IO8| | GPIO8 ||
-| IO9| Boot Button | IO/BOOT||
-| IO10| E-Paper Display | EPD_CS| |
+| IO6| External NOR Flash, SD Card, E-Paper Display| SCK| SCK is the clock line for SPI communication|
+| IO7| External NOR Flash, SD Card, E-Paper Display| MOSI|  Master Out Slave In|
+| IO9| Boot Button | IO/BOOT| Boot|
+| IO10| E-Paper Display | EPD_CS| for E-Ink display|
 | IO11| External NOR Flash | FLASH_CS| |
-| IO12| ESD protection | USB_D-| |
-| IO13| ESD protection | USB_D+| |
+| IO12| ESD protection | USB_D-| Protection against electrostatic discharges |
+| IO13| ESD protection | USB_D+| Protection against electrostatic discharges |
 | IO14| Change Button | IO/CHANGE| |
-| IO15| | TX| |
-| IO16| | RX| |
+| IO15| Test Pads| TX| Transmit data|
+| IO16| Test Pads | RX| Receive data|
 | IO17| RTC Module | RTC_RST| |
-| IO18| Environmental Sensor | I2C_PW| |
-| IO19| EPD Power | EPD_3V3_C| |
-| IO20| RTC Module, Qwiic / Stemma QT, Battery ChargeLevel| SDA| |
-| IO21| Battery ChargeLevel, Environmental Sensor, RTC Module, Qwiic / Stemma QT| SCL| |
+| IO18| Environmental Sensor | I2C_PW|  To detect a wide variety of volatile organic compounds|
+| IO19| EPD Power | EPD_3V3_C| Electronic power design|
+| IO20| RTC Module, Qwiic / Stemma QT, Battery ChargeLevel| SDA| Transmit data to or from target devices|
+| IO21| Battery ChargeLevel, Environmental Sensor, RTC Module, Qwiic / Stemma QT| SCL| Used to synchronously clock data in or out of the target device|
 | IO22| E-Paper Display| EPD_RST| |
-| GND| | GND | Connected to the main ground|
+| GND| Ground | GND | Connected to the main ground|
 
 ## Power Consumption Considerations
 The system is designed for low power operation, because the most power consuming components are the screen and the ESP32-C6.
