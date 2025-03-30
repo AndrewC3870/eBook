@@ -30,8 +30,8 @@ E-Reader!
 ## Bloc Diagram and PCB
 
 <p align="center">
-  <img src="https://github.com/AndrewC3870/eBook/blob/0235d223a7fa6ce54ad8a9eb8cdd704766dda8fe/Images/Bloc_diagram_v4.svg" alt="Bloc_diagram" width="200"/>
-  <img src="https://github.com/AndrewC3870/eBook/blob/8cbaa91b3b40d0fbba0b6ee787010c36f6c64137/Images/PCB_TOP_VIEW.png" alt="PCB" width="200"/>
+  <img src="https://github.com/AndrewC3870/eBook/blob/0235d223a7fa6ce54ad8a9eb8cdd704766dda8fe/Images/Bloc_diagram_v4.svg" alt="Bloc_diagram" width="500"/>
+  <img src="https://github.com/AndrewC3870/eBook/blob/8cbaa91b3b40d0fbba0b6ee787010c36f6c64137/Images/PCB_TOP_VIEW.png" alt="PCB" width="500"/>
 </p>
 
 ## Main Components and Connections
