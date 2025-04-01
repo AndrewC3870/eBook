@@ -1,6 +1,5 @@
 # OpenBook
-E-Reader!
-
+Fully functional E-book reader project!
 ![OpenBook_render_img](https://github.com/AndrewC3870/eBook/blob/72186e38a352aececaa19a66bf15cb31876096c4/Images/OpenBook_render_v2.jpg)
 ## 🧾 Bill of Materials (BOM)
 
@@ -103,3 +102,9 @@ The system is designed for low power operation, because the most power consuming
 * Battery 3.7V 1800mAh that is **6.6W** of power
 
 The avarage lifetime of device is about 14-17 days!
+
+## Important updates
+Updated the 3d model of the case, maked the design more comfortable by adding smooth edges and a nice texture for better grip, also modified the interior size of the case to perfectly fit the components inside! 
+
+
+![OpenBook_render_img](https://github.com/AndrewC3870/eBook/blob/main/Images/OpenBook_render_v4.jpg?raw=true)
