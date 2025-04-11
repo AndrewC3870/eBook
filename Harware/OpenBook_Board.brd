@@ -78,7 +78,15 @@
 <wire x1="-31" y1="59" x2="-81" y2="59" width="0" layer="20"/>
 <wire x1="-81" y1="59" x2="-81" y2="60" width="0" layer="20"/>
 <wire x1="-81" y1="60" x2="-100" y2="60" width="0" layer="20"/>
-<wire x1="-100" y1="60" x2="-100" y2="-51.2" width="0" layer="20"/>
+<wire x1="-100" y1="60" x2="-100" y2="12.6" width="0" layer="20"/>
+<wire x1="-100" y1="12.6" x2="-99.9" y2="12.5" width="0" layer="20"/>
+<wire x1="-99.9" y1="12.5" x2="-93.3" y2="12.5" width="0" layer="20"/>
+<wire x1="-93.3" y1="12.5" x2="-93.2" y2="12.4" width="0" layer="20"/>
+<wire x1="-93.2" y1="12.4" x2="-93.2" y2="-8.1" width="0" layer="20"/>
+<wire x1="-93.2" y1="-8.1" x2="-93.5" y2="-8.4" width="0" layer="20"/>
+<wire x1="-93.5" y1="-8.4" x2="-99.8" y2="-8.4" width="0" layer="20"/>
+<wire x1="-99.8" y1="-8.4" x2="-100" y2="-8.6" width="0" layer="20"/>
+<wire x1="-100" y1="-8.6" x2="-100" y2="-51.2" width="0" layer="20"/>
 <wire x1="-100" y1="-51.2" x2="-23.2" y2="-51.2" width="0" layer="20"/>
 <wire x1="-23.2" y1="-51.2" x2="-23.2" y2="-41.2" width="0" layer="20"/>
 <wire x1="-23.2" y1="-41.2" x2="-5" y2="-41.2" width="0" layer="20"/>
@@ -1001,7 +1009,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="jlcpcb-2layers">
+<designrules name="jlcpcb-2layers *">
 <param name="mdWireWire" value="5mil"/>
 <param name="mdWirePad" value="5mil"/>
 <param name="mdWireVia" value="5mil"/>
@@ -1212,7 +1220,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="SPICEPREFIX" value="C" x="-46" y="-26.8" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element uuid="2882400178" name="C1_BAT2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.PT1XlnR_SyKpGwg8KPM2cQ" package="EAGLE-LTSPICE_C0402" value="4.7uF" x="22.18" y="-9.48" smashed="yes" rot="R180">
-<attribute name="NAME" x="25.415" y="-11.015" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="20.515" y="-8.715" size="1.27" layer="25" rot="R180"/>
 <attribute name="SPICEMODEL" value="NONE" x="-8.3" y="71.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="-8.3" y="71.8" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -1279,7 +1287,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="VALUE" x="67.695" y="-37.105" size="1.27" layer="27" rot="R270"/>
 </element>
 <element uuid="2882400214" name="C_DELAY" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.PT1XlnR_SyKpGwg8KPM2cQ" package="EAGLE-LTSPICE_C0402" value="100nF" x="-30.9" y="48.47" smashed="yes" rot="R90">
-<attribute name="NAME" x="-31.265" y="46.565" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="-29.965" y="49.965" size="1.27" layer="25" rot="R270"/>
 <attribute name="SPICEMODEL" value="NONE" x="45.3" y="110.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="45.3" y="110.7" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -1519,16 +1527,16 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Hirose-Connector/FH34SRJ-24S-0.5SH99?qs=vcbW%252B4%252BSTIpKBl5ap9J8Fw%3D%3D" x="21.4" y="-107.6" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-5.06" y="-37.65" size="1.27" layer="25" align="center"/>
 </element>
-<element uuid="2882400022" name="J2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.PT1XlnR_SyKpGwg8KPM2cQ" package="SAMACSYS_PARTS_USB4110GFA" value="SAMACSYS_PARTS_USB4110-GF-A" x="67.63" y="3.1" smashed="yes" rot="R90">
-<attribute name="ARROW_PART_NUMBER" value="" x="103.19" y="67.87" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="ARROW_PRICE-STOCK" value="" x="103.19" y="67.87" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DESCRIPTION" value="CONN USB 2.0 TYPE-C R/A SMT" x="103.19" y="67.87" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="3.26mm" x="103.19" y="67.87" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="GCT (GLOBAL CONNECTOR TECHNOLOGY)" x="103.19" y="67.87" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="USB4110-GF-A" x="103.19" y="67.87" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="640-USB4110-GF-A" x="103.19" y="67.87" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/GCT/USB4110-GF-A?qs=KUoIvG%2F9IlYiZvIXQjyJeA%3D%3D" x="103.19" y="67.87" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="67.694" y="-6.2" size="1.27" layer="25" rot="R90" align="center"/>
+<element uuid="2882400022" name="J2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.PT1XlnR_SyKpGwg8KPM2cQ" package="SAMACSYS_PARTS_USB4110GFA" value="SAMACSYS_PARTS_USB4110-GF-A" x="67.33" y="3.1" smashed="yes" rot="R90">
+<attribute name="ARROW_PART_NUMBER" value="" x="102.89" y="67.87" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ARROW_PRICE-STOCK" value="" x="102.89" y="67.87" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" value="CONN USB 2.0 TYPE-C R/A SMT" x="102.89" y="67.87" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="HEIGHT" value="3.26mm" x="102.89" y="67.87" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="GCT (GLOBAL CONNECTOR TECHNOLOGY)" x="102.89" y="67.87" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="USB4110-GF-A" x="102.89" y="67.87" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="640-USB4110-GF-A" x="102.89" y="67.87" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/GCT/USB4110-GF-A?qs=KUoIvG%2F9IlYiZvIXQjyJeA%3D%3D" x="102.89" y="67.87" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="67.394" y="-6.2" size="1.27" layer="25" rot="R90" align="center"/>
 </element>
 <element uuid="2882400024" name="J3" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.PT1XlnR_SyKpGwg8KPM2cQ" package="JST04_1MM_RA" package3d_urn="urn:adsk.eagle:package:41390393/1" value="QWIIC_RIGHT_ANGLE" x="65.325" y="-31.92" smashed="yes" rot="R90">
 <attribute name="NAME" x="66.184" y="-27.717" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
@@ -1595,12 +1603,12 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="SPICEPREFIX" value="R" x="-178.1" y="-112.2" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element uuid="2882400100" name="R1_BAT" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.PT1XlnR_SyKpGwg8KPM2cQ" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="200" x="31.44" y="-3.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="38.875" y="-2.895" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="38.775" y="-3.395" size="1.27" layer="25" rot="R180"/>
 <attribute name="SPICEMODEL" value="NONE" x="117.8" y="88" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="117.8" y="88" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element uuid="2882400146" name="R1_PINH" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.PT1XlnR_SyKpGwg8KPM2cQ" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="-79.44" y="14.38" smashed="yes">
-<attribute name="NAME" x="-77.475" y="13.815" size="1.27" layer="25"/>
+<attribute name="NAME" x="-77.875" y="13.715" size="1.27" layer="25"/>
 <attribute name="SPICEMODEL" value="NONE" x="-38.8" y="-66.9" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="-38.8" y="-66.9" size="1.778" layer="27" display="off"/>
 </element>
@@ -1620,7 +1628,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="SPICEPREFIX" value="R" x="58.4" y="12.3" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element uuid="2882400108" name="R2-PINH" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.PT1XlnR_SyKpGwg8KPM2cQ" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="10K" x="-81.38" y="16.48" smashed="yes">
-<attribute name="NAME" x="-85.215" y="17.315" size="1.27" layer="25"/>
+<attribute name="NAME" x="-82.615" y="17.215" size="1.27" layer="25"/>
 <attribute name="SPICEMODEL" value="NONE" x="-12.8" y="-64.8" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="-12.8" y="-64.8" size="1.778" layer="27" display="off"/>
 </element>
@@ -1640,7 +1648,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="SPICEPREFIX" value="R" x="141.6" y="52.1" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element uuid="2882400106" name="R2_BAT" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.PT1XlnR_SyKpGwg8KPM2cQ" package="ESP32_WROVER_EAGLE-LTSPICE_R0402" value="2k" x="28.86" y="-3.42" smashed="yes" rot="R90">
-<attribute name="NAME" x="28.255" y="-3.075" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="28.055" y="-3.475" size="1.27" layer="25" rot="R180"/>
 <attribute name="SPICEMODEL" value="NONE" x="120.3" y="16.9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="120.3" y="16.9" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -1713,7 +1721,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="MF" value="Bosch Sensortec" x="118.4" y="6.56" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MP" value="BME680" x="118.4" y="6.56" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MP1" value="BME688" x="118.4" y="6.56" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="57.558090625" y="-37.8939" size="0.814009375" layer="25" ratio="11" rot="R180"/>
+<attribute name="NAME" x="53.658090625" y="-38.4939" size="0.814009375" layer="25" ratio="11" rot="R180"/>
 <attribute name="PACKAGE" value="LGA-8 Bosch Tools" x="118.4" y="6.56" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PRICE" value="None" x="118.4" y="6.56" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -1778,7 +1786,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 </element>
 <element uuid="2882400084" name="TP2" library="DeskAssistant v19 v1" library_urn="urn:adsk.wipprod:fs.file:vf.PT1XlnR_SyKpGwg8KPM2cQ" package="TP20R" value="TPTP20R" x="-43.32" y="25.6" smashed="yes">
 <attribute name="POPULARITY" value="2" x="-10.3" y="-76" size="1.778" layer="27" display="off"/>
-<attribute name="RX" value="" x="-42.6" y="27.48" size="1.778" layer="27" rot="R90" display="name"/>
+<attribute name="RX" value="" x="-42.7" y="20.98" size="1.778" layer="27" rot="R90" display="name"/>
 <attribute name="TP_SIGNAL_NAME" value="" x="-43.32" y="23.06" size="1" layer="37"/>
 <attribute name="VALUE" x="-44.082" y="24.584" size="0.0254" layer="27"/>
 </element>
@@ -1841,7 +1849,7 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <attribute name="DESCRIPTION" value=" Multiprotocol Modules ESP32-C6 module, Wi-Fi 6 in 2.4 GHz band, Bluetooth 5, Zigbee 3.0 and Thread. ESP34-WROOM Compatible - ENGINEERING SAMPLE " x="-71.695603125" y="27.49" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Espressif Systems" x="-71.695603125" y="27.49" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MP" value="ESP32-C6-WROOM-1-N8" x="-71.695603125" y="27.49" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-97.19" y="-7.985603125" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="-97.09" y="-8.685603125" size="1.27" layer="25" rot="R180"/>
 <attribute name="PACKAGE" value="None" x="-71.695603125" y="27.49" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PRICE" value="None" x="-71.695603125" y="27.49" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/ESP32-C6-WROOM-1-N8/Espressif+Systems/view-part/?ref=snap" x="-71.695603125" y="27.49" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2139,20 +2147,22 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <contactref element="J2" pad="B7"/>
 <via x="56.1" y="1.8" extent="1-16" drill="0.35">
 </via>
-<via x="61.4" y="3.2" extent="1-16" drill="0.35">
+<via x="60.5" y="3.2" extent="1-16" drill="0.35">
 </via>
 <wire x1="54.83" y1="1.83" x2="56.07" y2="1.83" width="0.15" layer="1"/>
 <wire x1="56.07" y1="1.83" x2="56.1" y2="1.8" width="0.15" layer="1"/>
-<wire x1="61.4" y1="3.2" x2="61.9" y2="3.2" width="0.15" layer="1"/>
+<wire x1="60.5" y1="3.2" x2="61.9" y2="3.2" width="0.15" layer="1"/>
 <wire x1="56.1" y1="1.8" x2="57.5" y2="3.2" width="0.15" layer="16"/>
-<wire x1="57.5" y1="3.2" x2="61.4" y2="3.2" width="0.15" layer="16"/>
-<wire x1="63.952" y1="3.35" x2="63.4" y2="3.35" width="0.15" layer="1"/>
+<wire x1="57.5" y1="3.2" x2="60.5" y2="3.2" width="0.15" layer="16"/>
+<wire x1="63.652" y1="3.35" x2="63.4" y2="3.35" width="0.15" layer="1"/>
 <wire x1="63.4" y1="3.35" x2="62.05" y2="3.35" width="0.15" layer="1"/>
 <wire x1="62.05" y1="3.35" x2="61.9" y2="3.2" width="0.15" layer="1"/>
-<wire x1="63.952" y1="2.35" x2="63.35" y2="2.35" width="0.15" layer="1"/>
-<wire x1="63.35" y1="2.35" x2="63" y2="2.7" width="0.15" layer="1"/>
-<wire x1="63" y1="2.7" x2="63" y2="2.95" width="0.15" layer="1"/>
-<wire x1="63" y1="2.95" x2="63.4" y2="3.35" width="0.15" layer="1"/>
+<wire x1="63.252" y1="3.202" x2="63.4" y2="3.35" width="0.15" layer="1"/>
+<wire x1="62.675" y1="2.61633125" x2="62.675" y2="3.08366875" width="0.15" layer="1"/>
+<wire x1="62.675" y1="3.08366875" x2="62.79333125" y2="3.202" width="0.15" layer="1"/>
+<wire x1="62.79333125" y1="3.202" x2="63.252" y2="3.202" width="0.15" layer="1"/>
+<wire x1="63.652" y1="2.35" x2="62.94133125" y2="2.35" width="0.15" layer="1"/>
+<wire x1="62.94133125" y1="2.35" x2="62.675" y2="2.61633125" width="0.15" layer="1"/>
 </signal>
 <signal name="VBUS">
 <contactref element="D1" pad="5"/>
@@ -2205,13 +2215,13 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <contactref element="D1" pad="6"/>
 <contactref element="J2" pad="A6"/>
 <contactref element="J2" pad="B6"/>
-<wire x1="63.952" y1="3.85" x2="54.95" y2="3.85" width="0.15" layer="1"/>
+<wire x1="63.652" y1="3.85" x2="54.95" y2="3.85" width="0.15" layer="1"/>
 <wire x1="54.95" y1="3.85" x2="54.83" y2="3.73" width="0.15" layer="1"/>
-<wire x1="63.952" y1="3.85" x2="64.55" y2="3.85" width="0.15" layer="1"/>
-<wire x1="64.55" y1="3.85" x2="64.8" y2="3.6" width="0.15" layer="1"/>
-<wire x1="64.8" y1="3.6" x2="64.8" y2="3" width="0.15" layer="1"/>
-<wire x1="64.8" y1="3" x2="64.65" y2="2.85" width="0.15" layer="1"/>
-<wire x1="64.65" y1="2.85" x2="63.952" y2="2.85" width="0.15" layer="1"/>
+<wire x1="64.55" y1="3.85" x2="63.652" y2="3.85" width="0.15" layer="1"/>
+<wire x1="64.8" y1="3.6" x2="64.55" y2="3.85" width="0.15" layer="1"/>
+<wire x1="64.8" y1="3" x2="64.8" y2="3.6" width="0.15" layer="1"/>
+<wire x1="64.65" y1="2.85" x2="64.8" y2="3" width="0.15" layer="1"/>
+<wire x1="63.652" y1="2.85" x2="64.65" y2="2.85" width="0.15" layer="1"/>
 </signal>
 <signal name="VUSB">
 <contactref element="J2" pad="A4"/>
@@ -2219,29 +2229,30 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <contactref element="J2" pad="A9"/>
 <contactref element="J2" pad="B4"/>
 <contactref element="J2" pad="B9"/>
-<wire x1="63.8814" y1="0.4794" x2="63.952" y2="0.55" width="0.3048" layer="1"/>
-<wire x1="63.8814" y1="0.4794" x2="62.16126875" y2="0.4794" width="0.3048" layer="1"/>
-<wire x1="59.73186875" y1="-1.95" x2="55.6" y2="-1.95" width="0.3048" layer="1"/>
-<wire x1="55.6" y1="-1.95" x2="55" y2="-2.55" width="0.3048" layer="1"/>
-<wire x1="62.16126875" y1="0.4794" x2="59.73186875" y2="-1.95" width="0.3048" layer="1"/>
-<wire x1="63.952" y1="5.35" x2="64.65" y2="5.35" width="0.3048" layer="1"/>
-<wire x1="64.65" y1="5.35" x2="65.2" y2="4.8" width="0.3048" layer="1"/>
-<wire x1="65.2" y1="4.8" x2="65.2" y2="1.47786875" width="0.3048" layer="1"/>
-<wire x1="65.2" y1="1.47786875" x2="64.27213125" y2="0.55" width="0.3048" layer="1"/>
-<wire x1="64.27213125" y1="0.55" x2="63.952" y2="0.55" width="0.3048" layer="1"/>
-<wire x1="63.952" y1="0.55" x2="63.952" y2="0.85" width="0.3048" layer="1"/>
-<wire x1="63.952" y1="5.65" x2="63.952" y2="5.35" width="0.3048" layer="1"/>
+<wire x1="63.5814" y1="0.4794" x2="63.652" y2="0.55" width="0.3048" layer="1"/>
+<wire x1="62.16126875" y1="0.4794" x2="63.5814" y2="0.4794" width="0.3048" layer="1"/>
+<wire x1="55.6" y1="-1.95" x2="59.73186875" y2="-1.95" width="0.3048" layer="1"/>
+<wire x1="55" y1="-2.55" x2="55.6" y2="-1.95" width="0.3048" layer="1"/>
+<wire x1="59.73186875" y1="-1.95" x2="62.16126875" y2="0.4794" width="0.3048" layer="1"/>
+<wire x1="63.652" y1="0.55" x2="63.652" y2="0.85" width="0.3048" layer="1"/>
+<wire x1="63.652" y1="5.65" x2="63.652" y2="5.35" width="0.3048" layer="1"/>
+<wire x1="64.64273125" y1="0.9206" x2="64.0226" y2="0.9206" width="0.3048" layer="1"/>
+<wire x1="64.0226" y1="0.9206" x2="63.652" y2="0.55" width="0.3048" layer="1"/>
+<wire x1="65.1544" y1="1.43226875" x2="64.64273125" y2="0.9206" width="0.3048" layer="1"/>
+<wire x1="63.652" y1="5.35" x2="64.27213125" y2="5.35" width="0.3048" layer="1"/>
+<wire x1="64.27213125" y1="5.35" x2="65.1544" y2="4.46773125" width="0.3048" layer="1"/>
+<wire x1="65.1544" y1="4.46773125" x2="65.1544" y2="1.43226875" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R2-USB1" pad="2"/>
 <contactref element="J2" pad="A5"/>
-<wire x1="63.952" y1="1.85" x2="60.42" y2="1.85" width="0.15" layer="1"/>
+<wire x1="63.652" y1="1.85" x2="60.42" y2="1.85" width="0.15" layer="1"/>
 <wire x1="60.42" y1="1.85" x2="60.32" y2="1.95" width="0.15" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="J2" pad="B5"/>
 <contactref element="R2-USB" pad="1"/>
-<wire x1="63.952" y1="4.85" x2="60.27" y2="4.85" width="0.15" layer="1"/>
+<wire x1="63.652" y1="4.85" x2="60.27" y2="4.85" width="0.15" layer="1"/>
 <wire x1="60.27" y1="4.85" x2="60.26" y2="4.84" width="0.15" layer="1"/>
 </signal>
 <signal name="VBAT">
@@ -2703,10 +2714,6 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 </via>
 <wire x1="-87.46" y1="-23.7" x2="-94.2" y2="-23.7" width="0.15" layer="1"/>
 <wire x1="-94.2" y1="-23.7" x2="-94.3" y2="-23.6" width="0.15" layer="1"/>
-<wire x1="-95.6" y1="-22.3" x2="-94.3" y2="-23.6" width="0.15" layer="16"/>
-<wire x1="-95.6" y1="-11.4" x2="-95.6" y2="-22.3" width="0.15" layer="16"/>
-<wire x1="-94.9" y1="-10.7" x2="-95.6" y2="-11.4" width="0.15" layer="16"/>
-<wire x1="-88.2" y1="-10.7" x2="-94.9" y2="-10.7" width="0.15" layer="16"/>
 <wire x1="-87.3" y1="-9.8" x2="-88.2" y2="-10.7" width="0.15" layer="16"/>
 <wire x1="-87.3" y1="-8.7" x2="-87.3" y2="-9.8" width="0.15" layer="16"/>
 <wire x1="-87.3" y1="-8.7" x2="-87.3" y2="-6.844396875" width="0.15" layer="1"/>
@@ -2722,6 +2729,9 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <wire x1="-76.1544" y1="-38.4456" x2="-87.5" y2="-27.1" width="0.15" layer="16"/>
 <wire x1="-13.32953125" y1="-37.37046875" x2="-14.4046625" y2="-38.4456" width="0.15" layer="16"/>
 <wire x1="-14.4046625" y1="-38.4456" x2="-76.1544" y2="-38.4456" width="0.15" layer="16"/>
+<wire x1="-88.2" y1="-10.7" x2="-93.33180625" y2="-10.7" width="0.15" layer="16"/>
+<wire x1="-93.33180625" y1="-10.7" x2="-95.221659375" y2="-22.678340625" width="0.15" layer="16"/>
+<wire x1="-95.221659375" y1="-22.678340625" x2="-94.3" y2="-23.6" width="0.15" layer="16"/>
 </signal>
 <signal name="IO/BOOT">
 <contactref element="U2" pad="15"/>
@@ -3363,6 +3373,10 @@ Source: www.farnell.com/datasheets/49238.pdf</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="4,1,e28db3d3d80288b0"/>
+<approved hash="4,1,ace5a9bece4edc78"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
