@@ -30,7 +30,7 @@ Fully functional E-book reader project!
 
 <p align="center">
   <img src="https://github.com/AndrewC3870/eBook/blob/1bd7b11a3ad493e3d66b00fcfb5d2edd9fa46891/Images/Bloc_diagram_v3.svg" style="width: 45%; max-width: 100%; height: auto;"/>
-  <img src="https://github.com/AndrewC3870/eBook/blob/main/Images/PCB_TOP_VIEW_v1.png?raw=true" alt="PCB" style="width: 45%; max-width: 100%; height: auto;"/>
+  <img src="https://github.com/AndrewC3870/eBook/blob/f39316f0376a3e692b614446fe2e8fbcd43e12b7/Images/PCB_3D_TOP_VIEW.jpg" alt="PCB" style="width: 45%; max-width: 100%; height: auto;"/>
 </p>
 
 ## Main Components and Connections
