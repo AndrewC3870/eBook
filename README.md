@@ -26,14 +26,14 @@ Fully functional E-book reader project!
 |Display Connector | [Mouser](https://ro.mouser.com/ProductDetail/Hirose-Connector/FH34SRJ-24S-0.5SH99?qs=vcbW%252B4%252BSTIpKBl5ap9J8Fw%3D%3D) | [Datasheet](https://ro.mouser.com/datasheet/2/185/FH34SRJ_24S_0_5SH_99__CL0580_1255_6_99_2DDrawing_0-1615044.pdf)|
 |Power Inductor | [Mouser](https://ro.mouser.com/ProductDetail/Bourns/SRR4828A-101M?qs=EU6FO9ffTwcw5i9FweW3JA%3D%3D) | [Datasheet](https://ro.mouser.com/datasheet/2/54/srr4828a-1391533.pdf)|
 
-## Bloc Diagram and PCB
+## 📊 Bloc Diagram and PCB
 
 <p align="center">
   <img src="https://github.com/AndrewC3870/eBook/blob/1bd7b11a3ad493e3d66b00fcfb5d2edd9fa46891/Images/Bloc_diagram_v3.svg" style="width: 45%; max-width: 100%; height: auto;"/>
   <img src="https://github.com/AndrewC3870/eBook/blob/f39316f0376a3e692b614446fe2e8fbcd43e12b7/Images/PCB_3D_TOP_VIEW.jpg" alt="PCB" style="width: 45%; max-width: 100%; height: auto;"/>
 </p>
 
-## Main Components and Connections
+## 📗 Main Components and Connections
 1. **Main processing unit**
     * `ESP32-C6 Microcontroller (ESP32-C6-WROOM-1-N8)` - The central processing unit of the system with WiFi/Bluetooth connectivity.
 
@@ -64,7 +64,7 @@ Fully functional E-book reader project!
     * `USB-C Connector`: For power and programming
     * `Qwiic/Stemma QT Connector`: I2C expansion port
 
-## ESP32-C6 Used pins
+## 🛠️ ESP32-C6 Used pins
 
 | PIN | Component | Signal Name | Notes|
 |-----|----------|--------------------------|------|
@@ -94,7 +94,7 @@ Fully functional E-book reader project!
 | IO22| E-Paper Display| EPD_RST| |
 | GND| Ground | GND | Connected to the main ground|
 
-## Power Consumption Considerations
+## 🔋 Power Consumption Considerations
 The system is designed for low power operation, because the most power consuming components are the screen and the ESP32-C6.
 
 * E-Ink Display: Only consumes power during updates about **0.3mW**
@@ -103,8 +103,15 @@ The system is designed for low power operation, because the most power consuming
 
 The avarage lifetime of device is about 14-17 days!
 
-## Important updates
-Updated the 3d model of the case, maked the design more comfortable by adding smooth edges and a nice texture for better grip, also modified the interior size of the case to perfectly fit the components inside! 
+## 🔄 Important updates
+∘ Updated the 3d model of the case, maked the design more comfortable by adding smooth edges and a nice texture for better grip, also modified the interior size of the case to perfectly fit the components inside! 
+
+∘ I have added some necessary files (a picture showing the arrangement of the components in the case, and the F3Z file with the complete design).
+
+∘ In the future, the implementation of software that will allow the use of the eBook is expected.
+
+
+
 
 
 ![OpenBook_render_img](https://github.com/AndrewC3870/eBook/blob/main/Images/OpenBook_render_v4.jpg?raw=true)
